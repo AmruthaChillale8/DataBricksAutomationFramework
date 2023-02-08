@@ -1,0 +1,345 @@
+Request method:	POST
+Request URI:	https://2026536611060639.9.gcp.databricks.com/api/2.0/token/create
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer dapie2c59ab8764b6d1646813a3c7cf2597a
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "comment": "comment",
+    "lifetime_seconds": 777600
+}
+HTTP/1.1 200 OK
+server: databricks
+x-databricks-reason-phrase: OK
+x-databricks-server-name: cons-webapp-0
+x-xss-protection: 1; mode=block
+date: Thu, 02 Feb 2023 11:43:02 GMT
+x-frame-options: SAMEORIGIN
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-content-type-options: nosniff
+content-type: application/json
+x-databricks-org-id: 2026536611060639
+content-encoding: gzip
+vary: Accept-Encoding
+transfer-encoding: chunked
+
+{
+    "token_value": "dapib08074e7dfd333ac6e52b985f6b788b5",
+    "token_info": {
+        "token_id": "b09ddbd099cabcc3782850e280928681898e0000be6385361726227cc369fc06",
+        "creation_time": 1675338183089,
+        "expiry_time": 1676115783089,
+        "comment": "comment"
+    }
+}
+Request method:	POST
+Request URI:	https://2026536611060639.9.gcp.databricks.com/api/2.0/token/delete
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer dapie2c59ab8764b6d1646813a3c7cf2597a
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "token_id": "b09ddbd099cabcc3782850e280928681898e0000be6385361726227cc369fc06"
+}
+HTTP/1.1 200 OK
+server: databricks
+x-databricks-reason-phrase: OK
+x-frame-options: SAMEORIGIN
+content-length: 3
+date: Thu, 02 Feb 2023 11:43:05 GMT
+x-xss-protection: 1; mode=block
+x-databricks-server-name: cons-webapp-0
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-content-type-options: nosniff
+content-type: application/json
+x-databricks-org-id: 2026536611060639
+
+{
+    
+}
+Request method:	POST
+Request URI:	https://2026536611060639.9.gcp.databricks.com/api/2.0/sql/warehouses
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer dapie2c59ab8764b6d1646813a3c7cf2597a
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Sql warehouse",
+    "cluster_size": "Medium",
+    "min_num_clusters": 1,
+    "max_num_clusters": 10
+}
+HTTP/1.1 200 OK
+date: Thu, 2 Feb 2023 11:43:07 GMT
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-content-type-options: nosniff
+content-type: application/json
+x-databricks-org-id: 2026536611060639
+content-encoding: gzip
+vary: Accept-Encoding
+server: databricks
+transfer-encoding: chunked
+
+{
+    "id": "ce3f44c317698b90"
+}
+Request method:	GET
+Request URI:	https://2026536611060639.9.gcp.databricks.com/api/2.0/sql/warehouses/?id=ce3f44c317698b90
+Proxy:			<none>
+Request params:	id=ce3f44c317698b90
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer dapie2c59ab8764b6d1646813a3c7cf2597a
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Sql warehouse",
+    "cluster_size": "Medium",
+    "min_num_clusters": 1,
+    "max_num_clusters": 10
+}
+HTTP/1.1 200 OK
+date: Thu, 2 Feb 2023 11:43:09 GMT
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-content-type-options: nosniff
+content-type: application/json
+x-databricks-org-id: 2026536611060639
+content-encoding: gzip
+vary: Accept-Encoding
+server: databricks
+transfer-encoding: chunked
+
+{
+    "warehouses": [
+        {
+            "id": "0e0a8776ec739321",
+            "test_overrides": {
+                
+            },
+            "name": "ARCION_ENDPOINT",
+            "size": "XSMALL",
+            "cluster_size": "X-Small",
+            "min_num_clusters": 1,
+            "max_num_clusters": 1,
+            "auto_stop_mins": 10,
+            "auto_resume": true,
+            "creator_name": "satpal.chandwade@databricks.com",
+            "creator_id": 4621755271699347,
+            "tags": {
+                
+            },
+            "spot_instance_policy": "COST_OPTIMIZED",
+            "enable_photon": true,
+            "enable_serverless_compute": false,
+            "num_clusters": 0,
+            "num_active_sessions": 0,
+            "state": "STOPPED",
+            "jdbc_url": "jdbc:spark://2026536611060639.9.gcp.databricks.com:443/default;transportMode=http;ssl=1;AuthMech=3;httpPath=/sql/1.0/warehouses/0e0a8776ec739321;",
+            "odbc_params": {
+                "hostname": "2026536611060639.9.gcp.databricks.com",
+                "path": "/sql/1.0/warehouses/0e0a8776ec739321",
+                "protocol": "https",
+                "port": 443
+            }
+        },
+        {
+            "id": "d5d7b5b04d4e45d1",
+            "test_overrides": {
+                
+            },
+            "name": "DBT_CLOUD_ENDPOINT",
+            "size": "XSMALL",
+            "cluster_size": "X-Small",
+            "min_num_clusters": 1,
+            "max_num_clusters": 1,
+            "auto_stop_mins": 10,
+            "auto_resume": true,
+            "creator_name": "sagar.wankhade@databricks.com",
+            "creator_id": 6931456150903036,
+            "tags": {
+                
+            },
+            "spot_instance_policy": "COST_OPTIMIZED",
+            "enable_photon": true,
+            "enable_serverless_compute": false,
+            "num_clusters": 0,
+            "num_active_sessions": 0,
+            "state": "STOPPED",
+            "jdbc_url": "jdbc:spark://2026536611060639.9.gcp.databricks.com:443/default;transportMode=http;ssl=1;AuthMech=3;httpPath=/sql/1.0/warehouses/d5d7b5b04d4e45d1;",
+            "odbc_params": {
+                "hostname": "2026536611060639.9.gcp.databricks.com",
+                "path": "/sql/1.0/warehouses/d5d7b5b04d4e45d1",
+                "protocol": "https",
+                "port": 443
+            }
+        },
+        {
+            "id": "d36d0e3ed9ac458c",
+            "name": "FIVETRAN_WAREHOUSE",
+            "size": "XSMALL",
+            "cluster_size": "X-Small",
+            "min_num_clusters": 1,
+            "max_num_clusters": 1,
+            "auto_stop_mins": 10,
+            "auto_resume": true,
+            "creator_name": "yansong.gao@databricks.com",
+            "creator_id": 8375470841422838,
+            "tags": {
+                
+            },
+            "spot_instance_policy": "COST_OPTIMIZED",
+            "enable_photon": true,
+            "enable_serverless_compute": false,
+            "num_clusters": 0,
+            "num_active_sessions": 0,
+            "state": "STOPPED",
+            "jdbc_url": "jdbc:spark://2026536611060639.9.gcp.databricks.com:443/default;transportMode=http;ssl=1;AuthMech=3;httpPath=/sql/1.0/warehouses/d36d0e3ed9ac458c;",
+            "odbc_params": {
+                "hostname": "2026536611060639.9.gcp.databricks.com",
+                "path": "/sql/1.0/warehouses/d36d0e3ed9ac458c",
+                "protocol": "https",
+                "port": 443
+            }
+        },
+        {
+            "id": "e95761d621fe1941",
+            "name": "HEVO_DATA_WAREHOUSE",
+            "size": "XSMALL",
+            "cluster_size": "X-Small",
+            "min_num_clusters": 1,
+            "max_num_clusters": 1,
+            "auto_stop_mins": 10,
+            "auto_resume": true,
+            "creator_name": "gboda@msystechnologies.com",
+            "creator_id": 1685498385803139,
+            "tags": {
+                
+            },
+            "spot_instance_policy": "COST_OPTIMIZED",
+            "enable_photon": true,
+            "enable_serverless_compute": false,
+            "num_clusters": 0,
+            "num_active_sessions": 0,
+            "state": "STOPPED",
+            "jdbc_url": "jdbc:spark://2026536611060639.9.gcp.databricks.com:443/default;transportMode=http;ssl=1;AuthMech=3;httpPath=/sql/1.0/warehouses/e95761d621fe1941;",
+            "odbc_params": {
+                "hostname": "2026536611060639.9.gcp.databricks.com",
+                "path": "/sql/1.0/warehouses/e95761d621fe1941",
+                "protocol": "https",
+                "port": 443
+            }
+        },
+        {
+            "id": "64a75b68dceabe67",
+            "name": "My SQL warehouse ",
+            "size": "MEDIUM",
+            "cluster_size": "Medium",
+            "min_num_clusters": 1,
+            "max_num_clusters": 10,
+            "auto_stop_mins": 15,
+            "auto_resume": true,
+            "creator_name": "camrutha@msystechnologies.com",
+            "creator_id": 8407719180107757,
+            "tags": {
+                
+            },
+            "spot_instance_policy": "COST_OPTIMIZED",
+            "enable_photon": true,
+            "enable_serverless_compute": false,
+            "num_clusters": 0,
+            "num_active_sessions": 0,
+            "state": "STOPPED",
+            "jdbc_url": "jdbc:spark://2026536611060639.9.gcp.databricks.com:443/default;transportMode=http;ssl=1;AuthMech=3;httpPath=/sql/1.0/warehouses/64a75b68dceabe67;",
+            "odbc_params": {
+                "hostname": "2026536611060639.9.gcp.databricks.com",
+                "path": "/sql/1.0/warehouses/64a75b68dceabe67",
+                "protocol": "https",
+                "port": 443
+            }
+        },
+        {
+            "id": "ce3f44c317698b90",
+            "name": "Sql warehouse",
+            "size": "MEDIUM",
+            "cluster_size": "Medium",
+            "min_num_clusters": 1,
+            "max_num_clusters": 10,
+            "auto_stop_mins": 15,
+            "auto_resume": true,
+            "creator_name": "camrutha@msystechnologies.com",
+            "creator_id": 8407719180107757,
+            "tags": {
+                
+            },
+            "spot_instance_policy": "COST_OPTIMIZED",
+            "enable_photon": true,
+            "enable_serverless_compute": false,
+            "num_clusters": 1,
+            "num_active_sessions": 0,
+            "state": "STARTING",
+            "jdbc_url": "jdbc:spark://2026536611060639.9.gcp.databricks.com:443/default;transportMode=http;ssl=1;AuthMech=3;httpPath=/sql/1.0/warehouses/ce3f44c317698b90;",
+            "odbc_params": {
+                "hostname": "2026536611060639.9.gcp.databricks.com",
+                "path": "/sql/1.0/warehouses/ce3f44c317698b90",
+                "protocol": "https",
+                "port": 443
+            },
+            "health": {
+                "status": "HEALTHY"
+            }
+        },
+        {
+            "id": "0634f1e1a23c5db0",
+            "name": "Starter Endpoint",
+            "size": "SMALL",
+            "cluster_size": "Small",
+            "min_num_clusters": 1,
+            "max_num_clusters": 1,
+            "auto_stop_mins": 60,
+            "auto_resume": true,
+            "creator_name": "yansong.gao@databricks.com",
+            "creator_id": 8375470841422838,
+            "tags": {
+                
+            },
+            "spot_instance_policy": "COST_OPTIMIZED",
+            "enable_photon": true,
+            "enable_serverless_compute": false,
+            "num_clusters": 0,
+            "num_active_sessions": 0,
+            "state": "STOPPED",
+            "jdbc_url": "jdbc:spark://2026536611060639.9.gcp.databricks.com:443/default;transportMode=http;ssl=1;AuthMech=3;httpPath=/sql/1.0/warehouses/0634f1e1a23c5db0;",
+            "odbc_params": {
+                "hostname": "2026536611060639.9.gcp.databricks.com",
+                "path": "/sql/1.0/warehouses/0634f1e1a23c5db0",
+                "protocol": "https",
+                "port": 443
+            }
+        }
+    ]
+}
